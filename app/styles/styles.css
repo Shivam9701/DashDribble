@@ -1,0 +1,108 @@
+/* Importing global font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Global font styles */
+body, h1, h2, h3, h4, h5, h6, p, ul, li, a, div, button, input, textarea {
+    font-family: 'Poppins', sans-serif !important;
+    color: white;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #312f2fb5;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);    
+}
+
+.logo-container {
+    flex: 3; /* 30% width */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #cddae7 !important;
+}
+
+.search-bar-container {
+    flex: 4; /* 40% width */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 20px;
+    padding: 8px 12px;
+    font-size: 1rem;
+    border: 1px solid #7f7c7c;
+    border-radius: 8px;
+    outline: none;
+    background: transparent;
+    color: white;
+    transition: border-color 0.3s ease;
+}
+
+.search-bar::placeholder {
+    color: #aaa;
+}
+
+.search-bar:focus {
+    border-color: #cddae7;
+}
+
+.navbar .nav-links {
+    flex: 3; /* 30% width */
+    display: flex;
+    justify-content: flex-end;
+    gap :15px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    font-weight: 200;
+    transition: background-color 0.3s, color 0.3s;
+    color: #cddae7 !important;
+    padding: 8px 12px; /* Added padding for better hover interaction */
+    position: relative; /* Ensure proper layering for hover effects */
+}
+
+.navbar .nav-links a:hover {
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5), 0 0 10px rgba(0, 123, 255, 0.3);
+}
+
+.navbar .nav-links a:hover::before {
+    opacity: 1;
+}
+
+/* Spacer to push content below navbar */
+.navbar-spacer {
+    height: 60px; /* Match navbar height */
+}
+
+/* Streamlit-specific adjustments */
+[data-testid="stSidebar"] {
+    display: none;
+}
+
+.st-emotion-cache-h4xjwg {
+    display: none;
+}
