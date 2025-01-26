@@ -4,7 +4,9 @@
 
 # Dashdribble: Football Data Platform
 
-Dashdribble is a football data platform designed to track leagues, teams, and standings from top European leagues. Our goal is to provide detailed analysis and modelling for everyone.
+Dashdribble is a football data platform designed to track leagues, teams, and standings from top European leagues. 
+
+Empowering fans and analysts with comprehensive football data and insights. Our platform delivers in-depth analysis and advanced modeling, making football analytics accessible to all.
 
 ---
 
