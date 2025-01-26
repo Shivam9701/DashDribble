@@ -17,7 +17,7 @@ competitions = [  # "PL",
 
 for competition in competitions:
     response = requests.get(
-        f"{API_URL}{competition}", headers={"X-Auth-Token": API_TOKEN}
+        f"{API_URL}/competition/{competition}", headers={"X-Auth-Token": API_TOKEN}
     )
     data = response.json()
     with open(f"data/historical_winners/{competition}.json", "w") as f:
