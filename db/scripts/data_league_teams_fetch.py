@@ -8,7 +8,8 @@ dotenv.load_dotenv()
 API_URL = os.getenv("FOOTBALL_DATA_ORG_URL")
 API_TOKEN = os.getenv("FOOTBALL_DATA_ORG_TOKEN")
 
-competitions = [  # "PL",
+competitions = [
+    "PL",
     "PD",
     "SA",
     "BL1",
@@ -17,8 +18,8 @@ competitions = [  # "PL",
 
 for competition in competitions:
     response = requests.get(
-        f"{API_URL}{competition}", headers={"X-Auth-Token": API_TOKEN}
+        f"{API_URL}{competition}/standings", headers={"X-Auth-Token": API_TOKEN}
     )
     data = response.json()
-    with open(f"data/historical_winners/{competition}.json", "w") as f:
+    with open(f"data/current_league_teams/{competition}.json", "w") as f:
         json.dump(data, f)

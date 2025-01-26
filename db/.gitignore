@@ -16,3 +16,4 @@ wheels/
 # Database
 db.sqlite3
 data
+*.db
