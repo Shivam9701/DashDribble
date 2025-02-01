@@ -29,7 +29,6 @@ Before setting up this project, ensure you have the following tools installed:
 - Python 3.12+
 - SQLite (for local database management)
 - Git
-- Node.js & npm (if you are using front-end development)
 
 ### Clone the Repository
 

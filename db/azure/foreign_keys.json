@@ -1,0 +1,38 @@
+[
+    {
+        "table": "league_teams",
+        "column": "league_id",
+        "ref_table": "leagues",
+        "ref_column": "id"
+    },
+    {
+        "table": "current_standings",
+        "column": "team_id",
+        "ref_table": "league_teams",
+        "ref_column": "id"
+    },
+    {
+        "table": "current_standings",
+        "column": "league_id",
+        "ref_table": "leagues",
+        "ref_column": "id"
+    },
+    {
+        "table": "coaches",
+        "column": "team_id",
+        "ref_table": "league_teams",
+        "ref_column": "id"
+    },
+    {
+        "table": "players",
+        "column": "team_id",
+        "ref_table": "league_teams",
+        "ref_column": "id"
+    },
+    {
+        "table": "stadiums",
+        "column": "team_id",
+        "ref_table": "league_teams",
+        "ref_column": "id"
+    }
+]
